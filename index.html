@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+   
+    <title>Codificador/Descodificar Hudson</title>
+
+</head>
+
+
+<body>
+    <main>
+            
+        <img id="logo" src="Frame 6.png">  
+        <img id="retangulo" src="Rectangle 1.png" alt="">    
+             
+       
+            <div class="entrada-mensagem">
+                
+                    <textarea id="entrada-texto" placeholder="Bem vindo ao meu Codificador de Mensagens! Digite o texto aqui." cols="30" rows="10" ></textarea>
+                            
+            </div>
+
+            
+            <div id="regras">
+                <p>somente letras minúsculas e sem acento</p>
+            </div>
+
+            
+            <div class="saida-mensagem" id="saida-texto">
+                
+                <img id="boneco" src="High quality products 1 1.png" >
+                <h3>Mensagem aparece aqui</h3>
+                <p>
+                    Digite um texto que você deseja<br>
+                    criptografar ou descriptografar
+                </p>
+
+            </div>    
+                
+               
+
+            <div class="botoes">
+                
+                <button onclick="criptografar()" >Criptografar</button>
+                <button onclick="descriptografar()" >Descriptografar</button>
+              
+            </div>
+    </main>
+
+
+    <footer>
+        <img class="rodape" src="Group 1.png"  ></svg>
+    </footer>
+
+
+
+    <script>
+
+        var textoEntrada = document.querySelector ('#entrada-texto')
+        var textoSaida = document.querySelector ('saida-texto')
+
+        function criptografar ()
+        {
+            var texto = textoEntrada.value;
+            
+            var criptografado = texto.replace(/e/g, "enter").replace(/i/g, "imes")
+            .replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
+
+            document.getElementById('saida-texto').innerHTML = 
+            '<textarea cols="25.52" rows="20.2" readonly id="entrada-texto" style="margin-left:-155px; margin-top:-17px" >' + criptografado + '</textarea>' 
+        } 
+        
+        
+        function descriptografar ()
+        {
+            var texto = textoEntrada.value;
+            
+            var descriptografado = texto.replace(/enter/g, "e").replace(/imes/g, "i")
+            .replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u")
+
+            document.getElementById('saida-texto').innerHTML = 
+            '<textarea cols="25.52" rows="20.2" readonly id="entrada-texto" style="margin-left:-155px; margin-top:-17px" >' + descriptografado + '</textarea>' 
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+body
+{
+    background-color: rgba(80, 141, 240, 0.212);
+    width: 100vw;
+}
+
+
+#logo
+{
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 70px;
+    height: 38px ;
+    width: 95px;
+}
+
+
+
+
+#retangulo
+{
+    height: 730px;
+    width: 390px;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 1050px;
+}
+
+
+
+#entrada-texto
+{
+    margin-top: 115px;
+    margin-left: 235px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    padding: 15px;
+    text-align:left;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    color: rgb(42, 25, 142);
+    
+}
+
+::-webkit-input-placeholder{color: rgb(42, 25, 142);}
+
+
+
+#regras
+{
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 240px;
+    font-weight: bold;
+    color: grey;
+}
+
+
+
+
+#saida-texto
+{ 
+    position: absolute;
+    text-align: center;
+    height: 336px;
+    width: 304px;
+    margin-top: 140px;
+    margin-left: 1085px;
+    font-size: 20px;
+    color: rgb(42, 25, 142);
+    font-weight: bold;
+  }
+
+p { padding: 5px; font-size: 12px; }
+
+
+
+
+button
+{
+    height: 40px;  
+    width: 140px;
+    display: inline-block;
+    margin:0 -14%;
+    font-size: 12px;   
+    border-radius: 15px; 
+    background-color: rgb(255, 255, 255);
+    margin-top: 480px;
+    margin-left: 242px;
+}
+
+
+
+button:hover
+{
+    height: 40px;  
+    width: 147px;
+    background-color:  rgb(16, 5, 79);
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+
+
+
+footer
+{
+    margin-top: 35px;
+    height: 300px;
+    width: auto;
+    background-color:  rgb(16, 5, 79);
+}
+
+
+
+
+.rodape
+{
+    padding: 40px;
+    height: 39px;
+    width: 200.85px;
+    margin-left: 40%;
+}
+
